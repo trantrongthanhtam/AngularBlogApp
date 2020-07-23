@@ -2,5 +2,5 @@
   <img [src]="blog.img" width="500px" alt=""/>
   <h1 class="text-left">{{blog.title}}</h1>
   <p><b>{{blog.abstract}}</b></p>
-  {{blog.content}}
+  <div [innerHTML]="blog.content"></div>
 </div>
