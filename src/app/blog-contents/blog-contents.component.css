@@ -1,0 +1,15 @@
+h2,h3,h4,h5 {
+    line-height: normal;
+}
+
+.blogcontainer {
+    max-width: 800px;
+    margin-top: 1rem;
+}
+hr {
+    /* border:  darkblue solid; */
+    width:100%;
+}
+a{
+    color: black;
+}

@@ -1,0 +1,15 @@
+<div class="blogcontainer mr-auto ml-auto">
+  <div
+    class="text-justify d-flex flex-column align-items-center"
+    *ngFor="let blog of myblog"
+  >
+    <hr />
+    <a class="nav-link" [routerLink]="['/blog', blog.id]">
+      <div class="imgcontainer">
+        <img [src]="blog.img" width="800px" height="auto" alt="" />
+      </div>
+      <h4>{{ blog.title }}</h4>
+      <p>{{ blog.abstract }}</p>
+    </a>
+  </div>
+</div>
