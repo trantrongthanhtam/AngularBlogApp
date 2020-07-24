@@ -1,6 +1,7 @@
 <div class="postcontainer d-flex flex-column align-items-center text-justify p-3 ml-auto mr-auto" *ngIf="blog">
-  <img [src]="blog.img" width="500px" alt=""/>
+  <figure><img [src]="blog.img" width="100%" alt=""/></figure>
   <h1 class="text-left">{{blog.title}}</h1>
+  <p class="author"><b>{{blog.author}}</b> - {{blog.createdDate}}</p>
   <p><b>{{blog.abstract}}</b></p>
-  <div [innerHTML]="blog.content"></div>
+  <article [innerHTML]="blog.content"></article>
 </div>
